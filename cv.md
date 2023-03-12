@@ -7,7 +7,6 @@
 * __Location:__ Bishkek, Kyrgyzstan
 * __Phone number:__ +996(507)08-11-81
 * __Email address:__ nur.emirlan.02@gmail.com
-* __Discord:__ @nuremirrz erzetq9lol#6034
 * __GitHub:__ [GitHub][1]
 
 [1]: https://github.com/nuremirrz  "My GitHub"
