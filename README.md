@@ -1,1 +1,1 @@
-# rsschool-cv
+https://nuremirrz.github.io/rsschool-cv/cv
