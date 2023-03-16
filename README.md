@@ -1,1 +1,1 @@
-# rsschool-cv
+__GitHub:__ https://nuremirrz.github.io/rsschool-cv/
