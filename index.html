@@ -8,46 +8,61 @@
     <title>CV#2. HTML, CSS & Git Basics</title>
 </head>
 <body>
-    <img src="./img/me.jpg" alt="Me">
-    <h1>Emirlan Nurlan uulu</h1>
-    <h2>Contacts</h2>
-    <ul>
-        <li>Location: Bishkek, Kyrgyzstan</li>
-        <li>Phone number: +996(507)08-11-81</li>    
-        <li>Email address: nur.emirlan.02@gmail.com</li>
-        <li>GitHub:@nuremirrz</li>
-    </ul>
-    <h2>About Me</h2>
-    <p>I am a junior frontend developer. I want to delve into this area and become a real developer. I am ready to work tirelessly to achieve my goal.</p>
-    <h2>Skills</h2>    
-    <ol>
-        <li>HTML, CSS(SASS, LESS)</li>
-        <li>JavaScript, jQuery, React (Basic)</li>
-        <li>Material UI, Bootstrap, canvas</li>
-        <li>GIT, GITHUB, Firebase</li>
-        <li>SQL, MySQL</li>
-        <li>Problem-solving skills</li>
-    </ol>
-    <h2>Code Example</h2>
-    ...
-    <h2>Experience  </h2>
-    <p>I hope that learning on your platform will be a great experience for my development.</p>
-    <h2>Education</h2>
-    <ul>
-        <li>University: Kyrgyz-Turkish Manas University, Computer Engineering</li>
-        <li>Courses:</li>
-        <ul>
-            <li>Makers</li>
-            <li>ITlogia</li>
-            <li>Result School</li>
-        </ul>        
-    </ul>
-    <h2>Language</h2>
-    <ol>
-        <li>Kyrgyz (Native)</li>
-        <li>Russian (Fluent)</li>
-        <li>English (Intermediate)</li>
-        <li>Turkish (C1)</li>
-    </ol>
+    <header>
+        <img src="./img/me.jpg" alt="Me">
+        <h1>Emirlan Nurlan uulu</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Contacts</h3>
+        </section>
+        <section>
+            <h3>About Me</h3>
+            <p>I am a junior frontend developer. I want to delve into this area and become a real developer. I am ready to work tirelessly to achieve my goal.</p>
+        </section>
+        <section>
+            <h3>Skills</h3>
+        </section>
+        <section>
+            <h3>Code Example</h3>
+            <code>
+                function uploadFile(file) {
+                    // chekking type of file
+                    if(!['image/jpg', 'image/png', 'image/jpeg', 'image/gif', 'image/heic','image/heif'].includes(file.type)) {
+                        alert('You can add only photo!');
+                        formImage.value = '';
+                        return;
+                    }
+                    // checking file size
+                    if(file.size > 2 * 1024 * 1024) {
+                        alert('You can add a file smaller than 2mb');
+                        return;
+                    }
+                
+                    let reader = new FileReader();
+                    reader.onload = function(e) {
+                        formPreview.innerHTML = `<img src="${e.target.result}" alt="Photo">`;
+                    };
+                    reader.onerror = function(e) {
+                        alert('Error');
+                    };
+                    reader.readAsDataURL(file);
+                }
+            </code>
+        </section>
+        <section>
+            <h3>Experience</h3>
+            <p>I hope that learning on your platform will be a great experience for my development.</p>
+        </section>
+        <section>
+            <h3>Education</h3>
+        </section>
+        <section>
+            <h3>Language</h3>
+        </section>
+    </main>
+    <footer>
+        <h4>Thanks to your att<h4>
+    </footer>
 </body>
 </html>
